@@ -89,7 +89,7 @@
                 </button>
             <?php endif; ?>
 
-            <a class="navbar-brand ms-4">GUIDE BOOK PKA </a>
+            <a class="navbar-brand ms-4">GUIDEBOOK PKA </a>
             
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
                 <i class="fas fa-bars"></i>
