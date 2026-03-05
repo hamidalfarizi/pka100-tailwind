@@ -9,6 +9,7 @@
         <h2 style="color: white; margin-bottom: 20px; font-family: 'Times New Roman', serif; text-transform: uppercase; letter-spacing: 2px;">Rentetan Kegiatan PKA</h2>
         <p style="color: rgba(255,255,255,0.7); font-family: 'Times New Roman', serif;">
             Sabtu, 14 oktober 2026 <br>
+            PMDG Putri Kampus 3
         </p>
     </div>
 </section>
