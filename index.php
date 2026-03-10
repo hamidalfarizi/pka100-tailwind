@@ -48,8 +48,15 @@
 <body id="page-top">
 
 <?php 
-    $rentetan = ['acara', 'data', 'serba_serbi', 'rentetan', 'denah']; 
-    if(isset($_GET['halaman']) && in_array($_GET['halaman'], $rentetan)): 
+    // 1. Definisikan semua halaman yang BOLEH diakses
+    $rentetan = ['acara', 'data', 'serba_serbi', 'rentetan', 'denah', 'kritik']; 
+    
+    // 2. Ambil nilai dari URL (biar nulisnya lebih pendek nanti)
+    $halaman_aktif = isset($_GET['halaman']) ? $_GET['halaman'] : null;
+    $akses_masuk = (isset($_GET['akses']) && $_GET['akses'] == 'masuk');
+
+    // Tampilkan Sidebar HANYA jika halaman ada di daftar valid
+    if(in_array($halaman_aktif, $rentetan)): 
 ?>
     <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sidebarPKA" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header border-bottom border-secondary">
