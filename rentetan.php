@@ -43,7 +43,7 @@
                             <p class="mb-0 text-white-50">Penjelasan umum mengenai kegiatan apel tahunan di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                              <a href="index.php?halaman=apel_tahunan" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <p class="mb-0 text-white-50">Penjelasan umum mengenai kegiatan kuliah umum di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=kuliah_umum" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                             <p class="mb-0 text-white-50">Penjelasan umum mengenai kegiatan Latihan ketangkasan baris-berbaris di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                             <a href="index.php?halaman=latihan_baris" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=PORSENI" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan pertama di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                             <a href="index.php?halaman=oh_pondokku" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=CCA" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan pertama di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                              <a href="index.php?halaman=hadrah" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=lomba_baris" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                             <p class="mb-0 text-white-50">Penjelasan umum mengenai kegiatan Single Song di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                              <a href="index.php?halaman=single_song" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -218,7 +218,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=live_music" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan pertama di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                              <a href="index.php?halaman=aneka_nusantara" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                              <a href="index.php?halaman=pembagian_hadiah" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan pertama di sini.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                            <a href="index.php?halaman=DA" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                             <p class="mb-0 text-white-50">Penjelasan mengenai kegiatan kedua di sini.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                             <a href="index.php?halaman=PG" class="tombol-gerak">
-                            <i class="fa-solid fa-chevron-right ms-5 text-white animasi-panah"></i>
+                            <i class="fa-solid fa-chevron-right text-white animasi-panah"></i>
                             </a>
                         </div>
                     </div>
