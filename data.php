@@ -254,46 +254,46 @@ function muatData(jenis) {
                         <tbody>
                             <tr>
                                 <td class="fw-bold">1</td>
-                                <td>20</td><td>21</td><td>21</td><td>22</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">84</td>
+                                <td>19</td><td>19</td><td>19</td><td>17</td><td>22</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">96</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">1 Int</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>12</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">12</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">2</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>21</td><td>21</td><td>21</td><td>21</td><td>22</td><td>22</td><td>22</td><td>21</td><td>22</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">193</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">3</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>21</td><td>21</td><td>21</td><td>20</td><td>19</td><td>18</td><td>21</td><td>21</td><td>21</td><td>21</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">224</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">3 Int</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>21</td><td>21</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">62</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">4</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>24</td><td>24</td><td>24</td><td>23</td><td>23</td><td>22</td><td>23</td><td>22</td><td>23</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">208</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">5</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>22</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+                                <td class="fw-bold">249</td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">6</td>
-                                <td>21</td><td>22</td><td>19</td><td>19</td><td>21</td><td>19</td><td>21</td><td>21</td><td>21</td><td>20</td><td>21</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">225</td>
+                                <td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>30</td><td>-</td><td>-</td>
+                                <td class="fw-bold">464</td>
                             </tr>
                             <tr style="background-color: #343a40; font-weight: bold;">
-                                <td colspan="18" class="text-center">TOTAL</td> <td style="color: #ffc107;">1.659</td> 
+                                <td colspan="18" class="text-center">TOTAL</td> <td style="color: #ffc107;">1508</td> 
                             </tr>
 
                         </tbody>

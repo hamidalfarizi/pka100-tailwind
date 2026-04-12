@@ -26,7 +26,7 @@
                 </div>
                 <img class="img-fluid " src="assets/img/_MG_6117.jpg"style="width: 500px; height: auto;" alt="..." />
                  <p class= "text-Black\-50 pt-3 mb-4" >
-    ini tentang serba berbi.... hal hal seperti shape dekorasi, shape kaos, dan map kampus..pokoknya yg di halam terakhir terakkhir
+    ini tentang acara hari h
 </p>
 </div>
         <!-- Credit-->
