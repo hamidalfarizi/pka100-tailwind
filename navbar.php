@@ -17,23 +17,39 @@
       <div class="offcanvas-body">
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a class="nav-link text-white hover-link" href="index.php?akses=masuk"><i class="fas fa-home me-2"></i> Beranda</a>
+    <a class="nav-link text-white hover-link" href="index.php?akses=masuk">
+        <i class="fas fa-home me-2"></i> 
+        <span class="lang-txt" data-key="menu_beranda">Beranda</span>
+    </a>
+</li>
+          <li class="nav-item mb-2">
+            <a class="nav-link text-white hover-link" href="index.php?halaman=rentetan">
+              <i class="fas fa-book-open me-2"></i>
+              <span class="lang-txt" data-key="menu_rentetan">Rentetan</span></a>
           </li>
           <li class="nav-item mb-2">
-            <a class="nav-link text-white hover-link" href="index.php?halaman=rentetan"><i class="fas fa-book-open me-2"></i> Rentetan Kegiatan PKA</a>
-          </li>
+    <a class="nav-link text-white hover-link" href="index.php?halaman=data">
+        <i class="fas fa-book-open me-2"></i> 
+        <span class="lang-txt" data-key="menu_data">Data</span>
+    </a>
+</li>
           <li class="nav-item mb-2">
-            <a class="nav-link text-white hover-link" href="index.php?halaman=data"><i class="fas fa-book-open me-2"></i> Data</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a class="nav-link text-white hover-link" href="index.php?halaman=acara"><i class="fas fa-book-open me-2"></i>Acara</a>
+            <a class="nav-link text-white hover-link" href="index.php?halaman=acara">
+              <i class="fas fa-book-open me-2"></i>
+            <span class="lang-txt" data-key="menu_acara">Acara</span>
+          </a>
           </li>
            <li class="nav-item mb-2">
-            <a class="nav-link text-white hover-link" href="index.php?halaman=serba_serbi"><i class="fas fa-book-open me-2"></i> Serba-Serbi</a>
+            <a class="nav-link text-white hover-link" href="index.php?halaman=serba_serbi">
+              <i class="fas fa-book-open me-2"></i> 
+              <span class="lang-txt" data-key="menu_serba">Serba-Serbi</span></a>
           </li>
           <hr>
           <li class="nav-item mb-2">
-            <a class="nav-link text-danger" href="index.php"><i class="fas fa-sign-out-alt me-2"></i> Keluar</a>
+            <a class="nav-link text-danger" href="index.php">
+              <i class="fas fa-sign-out-alt me-2"></i>
+              <span class="lang-txt" data-key="menu_keluar">Keluar</span>
+            </a>
           </li>
         </ul>
       </div>
