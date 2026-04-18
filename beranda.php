@@ -1,202 +1,111 @@
+<!-- Hero Header -->
+<header class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/40 via-emerald-900/60 to-slate-50 dark:to-slate-950"></div>
+        <img src="assets/img/test-bg.jpeg" class="w-full h-full object-cover" alt="Background">
+    </div>
 
-<style>
-    .masthead {
-        background: linear-gradient(to bottom, rgba(255, 235, 235, 0.3) 0%, #0c7c5e 75%, #064e3b 100%), 
-                    url("assets/img/test-bg.jpg") !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-attachment: scroll !important;
-        background-size: cover !important;
-    }
-    @media (max-width: 768px) {
-        .masthead h1 {
-            font-size: 1.8rem !important; /* Biar teks gak nabrak dinding HP */
-        }
-        .masthead h2 {
-            font-size: 1rem !important;
-        }
-    }
-    
-    /* Pengaman agar tidak bisa digeser ke kanan */
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-    footer.footer {
-    font-family: 'Times New Roman', serif !important;
-    letter-spacing: 1px; /* Memberi jarak antar huruf agar elegan */
-}
-
-footer.footer strong {
-    font-size: 18px;
-    letter-spacing: 2px;
-    
-}
-.footer .container-fluid {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-}
-/* Mengatur Font Judul di Main Stuff */
-#main_stuff .featured-text h4 {
-    font-family: 'Times New Roman', serif !important;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #000; /* Warna hitam tegas */
-}
-
-/* Mengatur Font Paragraf di Main Stuff */
-#main_stuff .featured-text p {
-    font-family: 'Times New Roman', serif !important;
-    font-size: 16px;
-    line-height: 1.6;
-}
-</style>
-
-<header class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h1 class="lang-txt" data-key="judul_1"></h1>
-                <h1 class="lang-txt" data-key="judul_2"></h1>
-            <h2 class="text-white-50 lang-txt" data-key="slogan"></h2>
-            </div> 
-        </div>
+    <div class="container relative z-10 mx-auto text-center">
+        <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight uppercase">
+            <span class="lang-txt" data-key="judul_1"></span><br>
+            <span class="text-emerald-400 lang-txt" data-key="judul_2"></span>
+        </h1>
+        <div class="w-24 h-1.5 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-emerald-50/80 font-medium max-w-2xl mx-auto lang-txt" data-key="slogan"></p>
     </div>
 </header>
-<!-- Menu-->
-        <section class="Menu-section text-center pt-5" id="Menu"> 
-    <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-Black mb-4 lang-txt" data-key="slogan"></h2>
-                    </div>
-                </div>
-                <img class="img-fluid " src="assets/img/logo warna.jpg"style="width: 500px; height: auto;" alt="..." />
-                 <p class= "text-Black\-50 pt-3 mb-4 lang-txt" data-key="narasi_pembuka" >
-                </p>
-         </div>
-        </section>
-        <!--Main Stuff-->
-        <section class="main stuff bg-light" id="main_stuff">
-            <div class="container px-4 px-lg-5">
-                <!--1 Rentetan Kegiatan PKA Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/22 UST AMAL.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Rentetan Kegiatan PKA</h4>
-                            <p class="text-black-50 mb-3">ini nanti isinya penjelasan umum tentang rentetan kegiatan pka! trus sampingnya foto kegiatan</p>
-                    <!-- ini buat tombol -->
-                       <a href="index.php?halaman=rentetan"class="tombol-gerak">
-                        <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
-                      </a>
-                        </div>
-                    </div>
-                </div>
-                 <!--Data Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Data</h4>
-                            <p class="text-black-50 mb-3">ini nanti isinya penjelasan umum tentang Data trus sampingnya fotonya</p>
-                    <!-- ini buat tombol -->
-                        <a href="index.php?halaman=data"class="tombol-gerak">
-                        <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
-                      </a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Acara Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Acara</h4>
-                            <p class="text-black-50 mb-3">ini nanti isinya penjelasan umum tentang kegiatan hari-H pka! trus sampingnya fotonya</p>
-                    <!-- ini buat tombol -->
-                        <a href="index.php?halaman=acara" class="tombol-gerak">
-                        <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
-                      </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Serba Serbi Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Serba-Serbi</h4>
-                            <p class="text-black-50 mb-3">ini nanti isinya penjelasan ya perentelan yg lain lah</p>
-                    <!-- ini buat tombol -->
-                      <a href="index.php?halaman=serba_serbi" class="tombol-gerak">
-                         <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
-                      </a>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <style>
-        
-/* Efek Gerak Otomatis (Melayang Naik Turun) */
-@keyframes melayang {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
 
-.tombol-gerak {
-    display: inline-block;
-    text-decoration: none;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek pegas */
-    animation: melayang 2s ease-in-out infinite; /* Biar gerak terus */
-    cursor: pointer;
-}
-
-/* Efek saat Kursor Menyentuh Tombol (Hover) */
-.tombol-gerak:hover {
-    scale: 1.2;
-    filter: drop-shadow(0px 5px 15px rgba(255, 255, 255, 0.4));
-    animation-play-state: paused; /* Berhenti melayang pas mau diklik */
-}
-
-/* Efek Membal Pas Diklik (Active) */
-.tombol-gerak:active {
-    transform: scale(0.8); /* Mengecil mendadak seperti ditekan */
-    transition: 0.1s;
-}
-</style>
-        <!-- Credit-->
-      <footer class="footer py-5 text-white" style="background-color: #064e3b; font-family: 'Times New Roman', serif;">
-    <div class="container-fluid px-lg-5"> <div class="row">
-            <div class="col-lg-8 text-start mb-4 mb-lg-0">
-                <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; border-bottom: 1px solid rgba(255,255,255,0.2); display: inline-block; padding-bottom: 5px;">Tim Redaksi</h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Penasihat:</strong> Al-Ustadz Dr.Nurul Salis Alamin, M.Pd.I.</p>
-                        <p class="mb-1"><strong>Pembimbing:</strong> Al-Ustadz Farouq Muhammad Syarif, S.Fill.I.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Tim Penulis:</strong> Nabila Fatihatunnada, S.Pd., A'izzaty Alfatul Urfi, Dea El Syifana Qurratu'ain</p>
-                        <p class="mb-1"><strong>Tim Layout:</strong> Maghfiro Ihzani Maulania, Siti Avila Amadea, Aufa Syahma Nabila</p>
-                    </div>
-                </div>
+<!-- Narasi Section -->
+<section class="py-16 px-6 bg-slate-50 dark:bg-slate-950 relative z-20">
+    <div class="container mx-auto px-6 max-w-4xl">
+        <div class="bg-white dark:bg-slate-900 rounded-[40px] p-10 md:p-16 shadow-2xl dark:shadow-emerald-900/10 -mt-24 relative z-20 border border-slate-100 dark:border-slate-800">
+            <div class="flex justify-center mb-10">
+                <div class="w-20 h-1.5 bg-emerald-100 dark:bg-emerald-900 rounded-full"></div>
             </div>
-
-            <div class="col-lg-4 text-lg-end text-start">
-                <div class="mb-2">
-                    <h5 class="text-uppercase mb-0">Panitia PKA 100 Gontor</h5>
-                    <p class="text-white-50">Pondok Modern Darussalam Gontor</p>
-                </div>
-                <div class="small text-white-50 mt-4">
-                    Copyright &copy; PKA 100 Gontor 2026
-                </div>
-            </div>
+            <p class="text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed text-center font-medium italic lang-txt" data-key="narasi_pembuka">
+                <?php echo $t['narasi_pembuka'] ?? 'Melihat zaman yang semakin maju dan berkembang...'; ?>
+            </p>
         </div>
     </div>
-</footer>
-        </section>
-    </body>
-</html>
+</section>
+
+<!-- Main Grid -->
+<section class="pb-24 px-6 bg-slate-50 dark:bg-slate-950">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            
+            <!-- Rentetan Kegiatan Card -->
+            <div class="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col border border-slate-100 dark:border-slate-800">
+                <div class="relative h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/img/22 UST AMAL.jpg" alt="Rentetan" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950/80 dark:from-black/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="px-3 py-1 bg-emerald-500 text-emerald-950 text-[10px] font-black uppercase tracking-widest rounded-full mb-2 inline-block">KEGIATAN</span>
+                        <h4 class="text-2xl font-bold text-white uppercase tracking-tight lang-txt" data-key="menu_rentetan"></h4>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col justify-between">
+                    <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">Penjelasan rinci mengenai seluruh rangkaian kegiatan PKA 100 Gontor dari awal hingga akhir.</p>
+                    <a href="index.php?halaman=rentetan" class="flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-500 text-emerald-950 hover:bg-emerald-400 group-hover:scale-110 transition-all shadow-lg shadow-emerald-500/30">
+                        <i class="fa-solid fa-arrow-right text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Revisitasi Card -->
+            <div class="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col border border-slate-100 dark:border-slate-800">
+                <div class="relative h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/img/bg-masthead.jpg" alt="Data" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-950/80 dark:from-black/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="px-3 py-1 bg-indigo-500 text-white text-[10px] font-black uppercase tracking-widest rounded-full mb-2 inline-block">STATISTIK</span>
+                        <h4 class="text-2xl font-bold text-white uppercase tracking-tight lang-txt" data-key="menu_data"></h4>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col justify-between">
+                    <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">Kumpulan data statistik dan informasi penting terkait peserta, panitia, dan logistik PKA.</p>
+                    <a href="index.php?halaman=data" class="flex items-center justify-center w-14 h-14 rounded-2xl bg-indigo-500 text-white hover:bg-indigo-400 group-hover:scale-110 transition-all shadow-lg shadow-indigo-500/30">
+                        <i class="fa-solid fa-arrow-right text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Seputar Acara Card -->
+            <div class="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col border border-slate-100 dark:border-slate-800">
+                <div class="relative h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/img/_MG_6117.jpg" alt="Acara" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-amber-950/80 dark:from-black/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="px-3 py-1 bg-amber-500 text-amber-950 text-[10px] font-black uppercase tracking-widest rounded-full mb-2 inline-block">HIGHLIGHTS</span>
+                        <h4 class="text-2xl font-bold text-white uppercase tracking-tight lang-txt" data-key="menu_acara"></h4>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col justify-between">
+                    <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">Jadwal dan rincian acara pada hari-H pelaksanaan PKA 100 Gontor.</p>
+                    <a href="index.php?halaman=acara" class="flex items-center justify-center w-14 h-14 rounded-2xl bg-amber-500 text-amber-950 hover:bg-amber-400 group-hover:scale-110 transition-all shadow-lg shadow-amber-500/30">
+                        <i class="fa-solid fa-arrow-right text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Serba Serbi Card -->
+            <div class="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col border border-slate-100 dark:border-slate-800">
+                <div class="relative h-64 overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/img/demo-image-02.jpg" alt="Serba Serbi" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-rose-950/80 dark:from-black/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="px-3 py-1 bg-rose-500 text-white text-[10px] font-black uppercase tracking-widest rounded-full mb-2 inline-block">INFO LAIN</span>
+                        <h4 class="text-2xl font-bold text-white uppercase tracking-tight lang-txt" data-key="menu_serba"></h4>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col justify-between">
+                    <p class="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">Informasi pelengkap lainnya, tata tertib, dan panduan umum selama PKA.</p>
+                    <a href="index.php?halaman=serba_serbi" class="flex items-center justify-center w-14 h-14 rounded-2xl bg-rose-500 text-white hover:bg-rose-400 group-hover:scale-110 transition-all shadow-lg shadow-rose-500/30">
+                        <i class="fa-solid fa-arrow-right text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

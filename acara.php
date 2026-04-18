@@ -1,61 +1,38 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Hero Header -->
+<header class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/40 via-emerald-900/60 to-slate-50 dark:to-slate-950"></div>
+        <img src="assets/img/_MG_6117.jpg" class="w-full h-full object-cover" alt="Background">
+    </div>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<header class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h1 class="mx-auto my-0 text-uppercase">PEKAN PERKENALAN</h1>
-                <h1 class="mx-auto my-0 text-uppercase mb-5">KHUTBATU-L-'ARSY</h1> 
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">"Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"</h2>
-               
-            </div> 
-        </div>
+    <div class="container relative z-10 mx-auto text-center">
+        <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight uppercase">
+            PEKAN PERKENALAN<br>
+            <span class="text-emerald-400">KHUTBATU-L-'ARSY</span>
+        </h1>
+        <div class="w-24 h-1.5 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-emerald-50/80 font-medium max-w-2xl mx-auto italic">"Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"</p>
     </div>
 </header>
 
-<section class="Menu-section text-center pt-5" id="Menu"> 
-    <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-Black mb-4"style="font-family: 'Times new Roman', sans-serif; font-size: 50px;">"Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"</h2>
-                    </div>
-                </div>
-                <img class="img-fluid " src="assets/img/_MG_6117.jpg"style="width: 500px; height: auto;" alt="..." />
-                 <p class= "text-Black\-50 pt-3 mb-4" >
-    ini tentang acara hari h
-</p>
-</div>
-        <!-- Credit-->
-      <footer class="footer py-5 text-white" style="background-color: #064e3b; font-family: 'Times New Roman', serif;">
-    <div class="container-fluid px-lg-5"> <div class="row">
-            <div class="col-lg-8 text-start mb-4 mb-lg-0">
-                <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; border-bottom: 1px solid rgba(255,255,255,0.2); display: inline-block; padding-bottom: 5px;">Tim Redaksi</h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Penasihat:</strong> Al-Ustadz Dr.Nurul Salis Alamin, M.Pd.I.</p>
-                        <p class="mb-1"><strong>Pembimbing:</strong> Al-Ustadz Farouq Muhammad Syarif, S.Fill.I.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Tim Penulis:</strong> Nabila Fatihatunnada, S.Pd., A'izzaty Alfatul Urfi, Dea El Syifana Qurratu'ain</p>
-                        <p class="mb-1"><strong>Tim Layout:</strong> Maghfiro Ihzani Maulania, Siti Avila Amadea, Aufa Syahma Nabila</p>
-                    </div>
-                </div>
+<!-- Content Section -->
+<section class="py-20 px-6 bg-slate-50 dark:bg-slate-950">
+    <div class="container mx-auto max-w-5xl">
+        <div class="bg-white dark:bg-slate-900 rounded-[32px] p-8 md:p-16 shadow-xl shadow-emerald-950/5 dark:shadow-emerald-900/10 flex flex-col items-center text-center border border-slate-100 dark:border-slate-800">
+            <div class="inline-flex p-4 rounded-3xl bg-emerald-50 dark:bg-emerald-900/40 mb-10">
+                 <img class="max-w-full md:max-w-2xl h-auto rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform duration-500" src="assets/img/_MG_6117.jpg" alt="Acara" />
             </div>
-
-            <div class="col-lg-4 text-lg-end text-start">
-                <div class="mb-2">
-                    <h5 class="text-uppercase mb-0">Panitia PKA 100 Gontor</h5>
-                    <p class="text-white-50">Pondok Modern Darussalam Gontor</p>
-                </div>
-                <div class="small text-white-50 mt-4">
-                    Copyright &copy; PKA 100 Gontor 2026
-                </div>
-            </div>
+            
+            <h2 class="text-3xl md:text-4xl font-black text-slate-800 dark:text-emerald-50 mb-8 leading-tight">
+                "Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"
+            </h2>
+            
+            <div class="w-16 h-1 bg-emerald-200 dark:bg-emerald-900 mb-8"></div>
+            
+            <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl">
+                Halaman ini berisi rincian mengenai acara hari-H Pekan Perkenalan Khutbatu-l-'Arsy (PKA) 100 Gontor. 
+                Saksikan kemeriahan dan nilai-nilai pendidikan yang tertanam dalam setiap atraksi dan rentetan acara yang disajikan.
+            </p>
         </div>
     </div>
-</footer>
+</section>

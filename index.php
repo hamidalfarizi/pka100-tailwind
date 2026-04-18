@@ -2,79 +2,11 @@
     include 'header.php'; 
     include 'bahasa.php';
 ?>
-<style>
-    /* Global Font Fix */
-    body, h1, h2, h3, h4, h5, h6, p, a, button {
-        font-family: 'Times New Roman', Times, serif !important;
-    }
+<body id="page-top" class="font-sans antialiased bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300">
 
-    /* Navigation Bar Styling */
-    #mainNav .nav-link {
-        font-weight: 700 !important;
-        font-size: 16px !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.1rem !important;
-    }
+<?php include 'navbar.php'; ?>
 
-    #mainNav .navbar-brand {
-        font-weight: 800 !important;
-        letter-spacing: 2px !important;
-    }
-
-    /* Masthead / Judul Utama */
-    .masthead h1 {
-        font-size: 3.5rem !important;
-        line-height: 1.2; 
-    }
-
-    .masthead h2 {
-        font-size: 1.2rem !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    /* Perbaikan Tombol Sidebar agar tetap di pojok kiri */
-    .btn-sidebar-nav {
-        background: #212529 !important;
-        color: white !important;
-        border: none !important;
-        padding: 8px 15px !important;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        z-index: 9999;
-    }
-    /* 1. Aturan Dasar untuk SEMUA teks Arab */
-body[style*="direction: rtl"] .lang-txt {
-    font-family: 'Amiri', serif !important;
-    line-height: 1 !important;
-}
-
-/* 2. Khusus untuk Judul (H1) - Tetap Besar */
-body[style*="direction: rtl"] h1.lang-txt {
-    font-size: 3rem !important; /* Ukuran judul raksasa */
-    margin-bottom: 20px;
-}
-
-/* 3. Khusus untuk Slogan (H2) - Sedang */
-body[style*="direction: rtl"] h2.lang-txt {
-    font-size: 1.8rem !important;
-}
-
-/* 4. Khusus untuk Paragraf Narasi (P) - Kecilkan di sini */
-body[style*="direction: rtl"] p.lang-txt {
-    font-size: 1.2rem !important; /* Ukuran narasi yang nyaman dibaca */
-    text-align: justify;         /* Agar rapi rata kanan-kiri */
-}
-</style>
-
-<body id="page-top">
-
-<?php if(isset($_GET['akses']) || isset($_GET['halaman'])): ?>
-    <?php include 'navbar.php'; ?>
-<?php endif; ?>
-
-    <div id="content-display">
+    <main id="content-display" class="relative">
         <?php 
             if(isset($_GET['akses']) && $_GET['akses'] == 'masuk'){
                 include "beranda.php";
@@ -83,60 +15,114 @@ body[style*="direction: rtl"] p.lang-txt {
                 $hal = $_GET['halaman'];
                 if(file_exists($hal . ".php")){
                     include $hal . ".php";
+                } elseif(file_exists("rentetan/" . $hal . ".php")) {
+                    include "rentetan/" . $hal . ".php";
                 } else {
-                    echo "<h2 class='text-white text-center mt-5'>Halaman Tidak Ditemukan!</h2>";
+                    echo "<div class='flex flex-col items-center justify-center min-h-[60vh]'>
+                            <h2 class='text-emerald-900 dark:text-emerald-400 text-3xl font-bold'>Halaman Tidak Ditemukan!</h2>
+                            <a href='index.php' class='mt-4 btn-primary'>Kembali ke Beranda</a>
+                          </div>";
                 }
             }
             else {
                 include "landing_page.php";
             }
         ?>
-    </div>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modern Footer -->
+    <footer class="bg-emerald-950 dark:bg-black text-emerald-50 pt-20 pb-10 border-t border-emerald-900/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-emerald-900/50">
+                <!-- Redaksi -->
+                <div class="lg:col-span-8">
+                    <h5 class="text-xs font-black uppercase tracking-[0.2em] text-emerald-500 mb-8">Tim Redaksi</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-[10px] uppercase font-bold text-emerald-500/50 mb-1">Penasihat</p>
+                                <p class="font-bold text-emerald-50 dark:text-emerald-100">Al-Ustadz Dr. Nurul Salis Alamin, M.Pd.I.</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase font-bold text-emerald-500/50 mb-1">Pembimbing</p>
+                                <p class="font-bold text-emerald-50 dark:text-emerald-100">Al-Ustadz Farouq Muhammad Syarif, S.Fill.I.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-[10px] uppercase font-bold text-emerald-500/50 mb-1">Tim Penulis</p>
+                                <p class="text-emerald-100/70 text-sm leading-relaxed font-medium">Nabila Fatihatunnada, A'izzaty Alfatul Urfi, Dea El Syifana Qurratu'ain</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] uppercase font-bold text-emerald-500/50 mb-1">Tim Layout</p>
+                                <p class="text-emerald-100/70 text-sm leading-relaxed font-medium">Maghfiro Ihzani Maulania, Siti Avila Amadea, Aufa Syahma Nabila</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credits -->
+                <div class="lg:col-span-4 lg:text-right flex flex-col justify-between">
+                    <div>
+                        <h5 class="text-xl font-black tracking-tighter text-white mb-2 text-balance">GUIDEBOOK PKA 100</h5>
+                        <p class="text-emerald-400 font-bold mb-1">Pondok Modern Darussalam Gontor</p>
+                        <p class="text-emerald-100/50 text-sm">Panitia PKA 100 Gontor 2026</p>
+                    </div>
+                    <div class="pt-10">
+                        <p class="text-xs text-emerald-500/40 uppercase tracking-widest">Copyright &copy; 2026 Gontor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 text-center">
+                 <a href="#page-top" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-900 dark:bg-emerald-800 text-emerald-500 hover:bg-emerald-500 hover:text-emerald-950 transition-all shadow-lg">
+                    <i class="fa-solid fa-chevron-up"></i>
+                 </a>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/scripts.js"></script>
     <script>
 function gantiBahasa(pilihan) {
-    // --- BAGIAN 1: GANTI TEKS (Sama seperti sebelumnya) ---
     const elemenTeks = document.querySelectorAll('.lang-txt');
     elemenTeks.forEach(el => {
         const kunci = el.getAttribute('data-key');
         if (kamus[pilihan][kunci]) {
-            el.innerText = kamus[pilihan][kunci];
+            el.innerHTML = kamus[pilihan][kunci];
         }
     });
-    // 2. Trik Khusus Arab: Ubah Arah Teks (RTL)--------------------------------------
-if (pilihan === 'ar') {
-        document.body.style.direction = 'rtl';
-        document.body.style.textAlign = 'right';
+
+    if (pilihan === 'ar') {
+        document.body.setAttribute('dir', 'rtl');
     } else {
-        document.body.style.direction = 'ltr';
-        document.body.style.textAlign = 'left';
+        document.body.setAttribute('dir', 'ltr');
     }
-    // 3. Update Warna Tombol (Biar "Nyala" di tombol yang benar)
-    const btnID = document.getElementById('btn-id');
-    const btnEN = document.getElementById('btn-en');
-    const btnAR = document.getElementById('btn-ar');
 
-    [btnID, btnEN, btnAR].forEach(btn => {
-    btn.classList.remove('btn-success');
-    btn.classList.add('btn-outline-dark');
-});
-
-// 2. Nyalakan HANYA tombol yang dipilih (Success/Hijau)
-const btnAktif = document.getElementById('btn-' + pilihan);
-if (btnAktif) {
-    btnAktif.classList.replace('btn-outline-dark', 'btn-success');
-}
-}
-window.onload = function() {
-    const bahasaTerakhir = localStorage.getItem('bahasaDipilih');
+    // Update buttons
+    ['id', 'en', 'ar'].forEach(lang => {
+        const btn = document.getElementById('btn-' + lang);
+        if (btn) {
+            if (lang === pilihan) {
+                btn.classList.add('btn-bahasa-active');
+                btn.classList.remove('btn-bahasa-inactive');
+            } else {
+                btn.classList.add('btn-bahasa-inactive');
+                btn.classList.remove('btn-bahasa-active');
+            }
+        }
+    });
     
-    if (bahasaTerakhir) {
-        gantiBahasa(bahasaTerakhir);
-    } else {
-        gantiBahasa('id');
-    }
+    localStorage.setItem('bahasaDipilih', pilihan);
+}
+
+function toggleDarkMode() {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+}
+
+window.onload = function() {
+    const bahasaTerakhir = localStorage.getItem('bahasaDipilih') || 'id';
+    gantiBahasa(bahasaTerakhir);
 };
 </script>
 </body>

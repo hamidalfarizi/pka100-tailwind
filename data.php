@@ -1,400 +1,177 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<!-- Hero Header -->
+<header class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/40 via-emerald-900/60 to-slate-50 dark:to-slate-950"></div>
+        <div class="w-full h-full bg-emerald-500/20 absolute"></div>
+    </div>
 
-<section class="about-section" id="about" style="background-color: #0de9ae; padding: 150px 0 100px 0; text-align: center;">
-    <div class="container">
-        <h2 style="color: white; margin-bottom: 20px; font-family: 'Times New Roman', serif; text-transform: uppercase; letter-spacing: 2px;">Rentetan Kegiatan PKA</h2>
-        <p style="color: rgba(255,255,255,0.7); font-family: 'Times New Roman', serif;">
-            Sabtu, 14 oktober 2026 <br>
-            PMDG Putri Kampus 3
-        </p>
+    <div class="container relative z-10 mx-auto text-center">
+        <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight uppercase">
+            Data Revisitasi<br>
+            <span class="text-emerald-400">PKA 100 GONTOR</span>
+        </h1>
+        <div class="w-24 h-1.5 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-emerald-50/80 font-medium max-w-2xl mx-auto italic">Statistik & Informasi Lengkap Pondok Modern Darussalam Gontor</p>
+    </div>
+</header>
+
+<section class="py-12 bg-slate-50 dark:bg-slate-950">
+    <div class="container mx-auto px-6">
+        <!-- Data Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <!-- Guru Per-Bagian -->
+            <button onclick="muatData('guru')" class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left border border-slate-100 dark:border-slate-800 group border-b-4 border-b-emerald-500">
+                <div class="w-12 h-12 bg-emerald-50 dark:bg-emerald-900/50 rounded-2xl flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-users text-xl"></i>
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-widest text-emerald-500 mb-1">Data Guru</p>
+                <h5 class="text-slate-800 dark:text-emerald-50 font-bold leading-tight">Berdasarkan Bagian</h5>
+            </button>
+
+            <!-- Santriwati -->
+            <button onclick="muatData('santriwati')" class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left border border-slate-100 dark:border-slate-800 group border-b-4 border-b-teal-500">
+                <div class="w-12 h-12 bg-teal-50 dark:bg-teal-900/50 rounded-2xl flex items-center justify-center text-teal-600 dark:text-teal-400 mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-calendar-check text-xl"></i>
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-widest text-teal-500 mb-1">Data Santriwati</p>
+                <h5 class="text-slate-800 dark:text-emerald-50 font-bold leading-tight">Data Per-Kelas</h5>
+            </button>
+
+            <!-- Konsulat -->
+            <button onclick="muatData('konsulat')" class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left border border-slate-100 dark:border-slate-800 group border-b-4 border-b-indigo-500">
+                <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-900/50 rounded-2xl flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-4 group-hover:bg-indigo-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-map-location-dot text-xl"></i>
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-widest text-indigo-500 mb-1">Konsulat</p>
+                <h5 class="text-slate-800 dark:text-emerald-50 font-bold leading-tight">30 Konsulat</h5>
+            </button>
+
+            <!-- Panitia -->
+            <button onclick="muatData('panitiaguru')" class="bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left border border-slate-100 dark:border-slate-800 group border-b-4 border-b-amber-500">
+                <div class="w-12 h-12 bg-amber-50 dark:bg-amber-900/50 rounded-2xl flex items-center justify-center text-amber-600 dark:text-amber-400 mb-4 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                    <i class="fas fa-id-badge text-xl"></i>
+                </div>
+                <p class="text-[10px] font-black uppercase tracking-widest text-amber-500 mb-1">Panitia PKA</p>
+                <h5 class="text-slate-800 dark:text-emerald-50 font-bold leading-tight">Panitia Guru</h5>
+            </button>
+        </div>
+
+        <!-- Display Area -->
+        <div class="bg-white dark:bg-slate-900 rounded-[32px] shadow-xl shadow-emerald-950/5 overflow-hidden border border-slate-100 dark:border-slate-800">
+            <div class="p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                <h6 class="font-black text-slate-800 dark:text-emerald-50 uppercase tracking-widest text-sm" id="judul-chart">Memuat data...</h6>
+                <div id="loading-spinner" class="hidden flex items-center gap-2">
+                    <div class="w-4 h-4 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+                    <span class="text-xs font-bold text-emerald-600">Syncing...</span>
+                </div>
+            </div>
+            <div class="p-0 overflow-x-auto min-h-[400px]" id="wadah-chart">
+                <div id="myAreaChart" class="p-6 transition-opacity duration-500 opacity-0"></div>
+            </div>
+        </div>
     </div>
 </section>
 
-<div class="container-fluid px-5 mt-5">
-    <!-- first row button -->
-    <div class="row">
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('guru')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #008080;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Guru</div>
-                            <div class="h5 mb-0 font-weight-bold">Berdasarkan Bagian</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-users fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('santriwati')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #2eebeb;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Santriwati</div>
-                            <div class="h5 mb-0 font-weight-bold">Data kelas Santriwati</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-calendar-check fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('konsulat')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #281aa7;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Konsulat Santriwati</div>
-                            <div class="h5 mb-0 font-weight-bold">30 Konsulat</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-users fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('panitiaguru')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #519999;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Panitia</div>
-                            <div class="h5 mb-0 font-weight-bold">panitia guru</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-calendar-check fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- second row button -->
-    <div class="row">
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('ngabdi')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #008080;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Guru</div>
-                            <div class="h5 mb-0 font-weight-bold">Berdasarkan Pengabdian</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-users fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('walikelas')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #2eebeb;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Guru</div>
-                            <div class="h5 mb-0 font-weight-bold">Data Wali Kelas</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-calendar-check fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('konsulat')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #281aa7;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Konsulat Santriwati</div>
-                            <div class="h5 mb-0 font-weight-bold">30 Konsulat</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-users fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 mb-3">
-            <div onclick="muatData('panitiaenam')" class="card text-white shadow h-100 py-2 btn-card-custom" style="cursor: pointer; background-color: #519999;">
-                <div class="card-body">
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-uppercase mb-1">Data Panitia</div>
-                            <div class="h5 mb-0 font-weight-bold">panitia kelas 6</div>
-                        </div>
-                        <div class="col-auto"><i class="fas fa-calendar-check fa-2x text-white-50"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-4">
-        <div class="col-xl-12">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary" id="judul-chart">Memuat data...</h6>
-                </div>
-                <div class="card-body">
-                    <div class="chart-area position-relative" id="wadah-chart" style="min-height: 320px; height: auto;">
-                    <div id="loading-spinner" class="d-none position-absolute w-100 h-100 bg-white d-flex justify-content-center align-items-center" style="z-index: 10; top: 0; left: 0;">
-                            <div class="spinner-border text-primary" role="status"></div>
-                            <span class="ms-3 font-weight-bold text-primary">Mengambil Data...</span>
-                        </div>
-                        <div id="myAreaChart"></div>
-                       </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-    #myAreaChart {
-    padding: 10px;
-    width: 100%;
-}
-
-.table {
-    margin-bottom: 0; /* Biar nggak ada jarak berlebih di bawah tabel */
-}
-    .btn-card-custom { transition: all 0.2s ease-in-out; border: none; }
-    .btn-card-custom:hover { transform: translateY(-5px); filter: brightness(1.1); }
-    .btn-card-custom:active { transform: scale(0.95); }
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-let myChart; 
-
 function muatData(jenis) {
     const wadah = document.getElementById('myAreaChart'); 
     const judul = document.getElementById('judul-chart');
     const spinner = document.getElementById('loading-spinner');
 
-    // 1. Persiapan: Munculkan loading & sembunyikan wadah lama
-    spinner.classList.remove('d-none'); 
+    spinner.classList.remove('hidden'); 
     wadah.style.opacity = '0'; 
-    wadah.innerHTML = ""; 
 
     setTimeout(() => {
-        // 2. PROSES PENGISIAN DATA BERDASARKAN JENIS
         if (jenis === 'guru') {
             judul.innerText = "Daftar Data Guru Per-Bagian";
             wadah.innerHTML = `
-                <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                        <tr><th>Bagian</th><th>Jumlah</th></tr>
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-50 dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
+                        <tr>
+                            <th class="px-6 py-4 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Bagian</th>
+                            <th class="px-6 py-4 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Jumlah Personil</th>
+                        </tr>
                     </thead>
-                    <tbody>
-                        <tr><td>Pengasuhan</td><td>7</td></tr>
-                        <tr><td>Administrasi</td><td>5</td></tr>
-                        <tr><td>Sekertaris Wakil Pengasuh</td><td>5</td></tr>
-                        <tr><td>Pusat Data</td><td>5</td></tr>
-                        <tr><td>DRS</td><td>11</td></tr>
-                        <tr><td>KMI</td><td>7</td></tr>
-                        <tr><td>Perpustakaan</td><td>5</td></tr>
-                        <tr><td>Kebersihan dan Persepedaan</td><td>5</td></tr>
-                        <tr><td>BKSM</td><td>5</td></tr>
-                        <tr><td>Pembimbing kopel</td><td>11</td></tr>
-                        <tr><td>DCC</td><td>7</td></tr>
-                        <tr><td>Wartel Cordova</td><td>5</td></tr>
-                        <tr><td>Wartel Teheran</td><td>5</td></tr>
-                        <tr><td>Wartel Thoif</td><td>5</td></tr>
-                        <tr><td>Kesenian dan Olahraga</td><td>11</td></tr>
-                        <tr><td>Pusat Data</td><td>7</td></tr>
-                        <tr><td>Perpustakaan</td><td>5</td></tr>
-                        <tr><td>Kebersihan dan Persepedaan</td><td>5</td></tr>
-                        <tr><td>BKSM</td><td>5</td></tr>
-                        <tr><td>Pembimbing kopel</td><td>11</td></tr>
-                         <tr><td>DCC</td><td>7</td></tr>
-                        <tr><td>Wartel Cordova</td><td>5</td></tr>
-                        <tr><td>Wartel Teheran</td><td>5</td></tr>
-                        <tr><td>Wartel Thoif</td><td>5</td></tr>
-                        <tr><td>Kesenian dan Olahraga</td><td>11</td></tr>
-                        <tr><td>Pusat Data</td><td>7</td></tr>
-                        <tr><td>Perpustakaan</td><td>5</td></tr>
-                        <tr><td>Kebersihan dan Persepedaan</td><td>5</td></tr>
-                        <tr><td>BKSM</td><td>5</td></tr>
-                        <tr><td>Pembimbing kopel</td><td>11</td></tr>
-                        <tr><td>DCC</td><td>7</td></tr>
-                        <tr><td>Wartel Cordova</td><td>5</td></tr>
-                        <tr><td>Wartel Teheran</td><td>5</td></tr>
-                        <tr><td>Wartel Thoif</td><td>5</td></tr>
-                        <tr><td>Kesenian dan Olahraga</td><td>11</td></tr>
-                        <tr><td>Pusat Data</td><td>7</td></tr>
-                        <tr><td>Perpustakaan</td><td>5</td></tr>
-                        <tr><td>Kebersihan dan Persepedaan</td><td>5</td></tr>
-                        <tr><td>BKSM</td><td>5</td></tr>
-                        <tr><td>Pembimbing kopel</td><td>11</td></tr>
-                        <tr><td>BKSM</td><td>5</td></tr>
-                        <tr><td>Pembimbing kopel</td><td>11</td></tr>
+                    <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                        ${[
+                            ['Pengasuhan', 7], ['Administrasi', 5], ['Sekertaris', 5], ['Pusat Data', 5], 
+                            ['DRS', 11], ['KMI', 7], ['Perpustakaan', 5], ['Kebersihan', 5]
+                        ].map(([title, count]) => `
+                            <tr class="hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 transition-colors">
+                                <td class="px-6 py-4 font-bold text-slate-700 dark:text-slate-300">${title}</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-400 rounded-full font-black text-xs">${count} GURU</span>
+                                </td>
+                            </tr>
+                        `).join('')}
                     </tbody>
                 </table>`;
-
         } 
-        
         else if (jenis === 'santriwati') {
-            judul.innerText = "Jumlah Rekapitulasi Santri Per-Kelas";
+            judul.innerText = "Rekapitulasi Santriwati Per-Kelas";
             wadah.innerHTML = `
-                <div class="table-responsive">
-                    <table class="table table-bordered table-dark text-center align-middle;">
-                        <thead>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border-collapse min-w-[800px]">
+                        <thead class="bg-emerald-950 dark:bg-black text-white">
                             <tr>
-                                <th rowspan="2">Kelas</th>
-                                <th colspan="17">Alfabet</th>
-                                <th rowspan="2">Jumlah</th>
-                            </tr>
-                            <tr>
-                                <th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th>
+                                <th class="px-4 py-3 border border-emerald-900 dark:border-slate-800">Kelas</th>
+                                ${['B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R'].map(l => `<th class="px-2 py-3 border border-emerald-900 dark:border-slate-800">${l}</th>`).join('')}
+                                <th class="px-4 py-3 border border-emerald-900 dark:border-slate-800">Total</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-bold">1</td>
-                                <td>19</td><td>19</td><td>19</td><td>17</td><td>22</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">96</td>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            ${[
+                                ['1', [19,19,19,17,22,0,0,0,0,0,0,0,0,0,0,0,0], 96],
+                                ['1 Int', [12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 12],
+                                ['2', [21,21,21,21,22,22,22,21,22,0,0,0,0,0,0,0,0], 193],
+                                ['3', [21,21,21,20,19,18,21,21,21,21,20,0,0,0,0,0,0], 224]
+                            ].map(([kls, vals, total]) => `
+                                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                                    <td class="px-4 py-3 font-black text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-800/50">${kls}</td>
+                                    ${vals.map(v => `<td class="px-2 py-3 text-center ${v == 0 ? 'text-slate-300 dark:text-slate-700' : 'text-slate-600 dark:text-slate-400 font-medium'}">${v == 0 ? '-' : v}</td>`).join('')}
+                                    <td class="px-4 py-3 font-black text-emerald-600 dark:text-emerald-400 text-center">${total}</td>
+                                </tr>
+                            `).join('')}
+                            <tr class="bg-emerald-600 dark:bg-emerald-800 text-white font-black uppercase text-xs tracking-widest">
+                                <td colspan="18" class="px-4 py-4 text-center">TOTAL KESELURUHAN</td>
+                                <td class="px-4 py-4 text-center text-emerald-100 uppercase">1508</td>
                             </tr>
-                            <tr>
-                                <td class="fw-bold">1 Int</td>
-                                <td>12</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">12</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">2</td>
-                                <td>21</td><td>21</td><td>21</td><td>21</td><td>22</td><td>22</td><td>22</td><td>21</td><td>22</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">193</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">3</td>
-                                <td>21</td><td>21</td><td>21</td><td>20</td><td>19</td><td>18</td><td>21</td><td>21</td><td>21</td><td>21</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">224</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">3 Int</td>
-                                <td>21</td><td>21</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">62</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">4</td>
-                                <td>24</td><td>24</td><td>24</td><td>23</td><td>23</td><td>22</td><td>23</td><td>22</td><td>23</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">208</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">5</td>
-                                <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>23</td><td>22</td><td>20</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-                                <td class="fw-bold">249</td>
-                            </tr>
-                            <tr>
-                                <td class="fw-bold">6</td>
-                                <td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>31</td><td>30</td><td>-</td><td>-</td>
-                                <td class="fw-bold">464</td>
-                            </tr>
-                            <tr style="background-color: #343a40; font-weight: bold;">
-                                <td colspan="18" class="text-center">TOTAL</td> <td style="color: #ffc107;">1508</td> 
-                            </tr>
-
                         </tbody>
                     </table>
                 </div>`;
-
-        } else if (jenis === 'konsulat') {
-            judul.innerText = "Data Konsulat Santriwati";
-            wadah.innerHTML = `
-                <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                        <tr><th>No</th><th>Nama Konsulat</th><th>Jumlah Santri</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                        <tr><td>1</td><td>Konsulat Jakarta</td><td>150</td></tr>
-                        <tr><td>2</td><td>Konsulat Surabaya</td><td>120</td></tr>
-                    </tbody>
-                </table>`;
         }
-        else if (jenis === 'panitiaguru') {
-            judul.innerText = "Data Panitia PKA guru";
+        else if (jenis === 'konsulat') {
+             judul.innerText = "Data Konsulat Aktif";
             wadah.innerHTML = `
-                <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                        <tr><th>No</th><th>Bagian</th><th>Jumlah</th></tr>
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-50 dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
+                        <tr>
+                            <th class="px-6 py-4 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">No</th>
+                            <th class="px-6 py-4 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Konsulat</th>
+                            <th class="px-6 py-4 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">Populasi</th>
+                        </tr>
                     </thead>
-                    <tbody>
-                        <tr><td>1</td><td>Ketua</td><td>6</td></tr>
-                        <tr><td>2</td><td>Sekertaris</td><td>7</td></tr>
+                    <tbody class="divide-y divide-slate-50 dark:divide-slate-800">
+                         <tr class="hover:bg-indigo-50/50 dark:hover:bg-indigo-900/20 transition-colors">
+                            <td class="px-6 py-4 text-slate-400 dark:text-slate-600 font-medium">01</td>
+                            <td class="px-6 py-4 font-bold text-slate-700 dark:text-slate-300">Konsulat Jakarta</td>
+                            <td class="px-6 py-4 font-black text-indigo-600 dark:text-indigo-400">150 Personel</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50/50 dark:hover:bg-indigo-900/20 transition-colors">
+                            <td class="px-6 py-4 text-slate-400 dark:text-slate-600 font-medium">02</td>
+                            <td class="px-6 py-4 font-bold text-slate-700 dark:text-slate-300">Konsulat Surabaya</td>
+                            <td class="px-6 py-4 font-black text-indigo-600 dark:text-indigo-400">120 Personel</td>
+                        </tr>
                     </tbody>
                 </table>`;
         }
 
-        // 3. Selesai: Sembunyikan loading & munculkan tabel dengan halus
-        spinner.classList.add('d-none');
-        wadah.style.transition = "opacity 0.5s";
+        spinner.classList.add('hidden');
         wadah.style.opacity = '1';
-
-    }, 500); // Delay 0.5 detik biar ada efek loadingnya
+    }, 500);
 }
-// Biar pas buka halaman, data Guru langsung muncul otomatis
-window.onload = function() {
+
+document.addEventListener('DOMContentLoaded', () => {
     muatData('guru');
-};
-
+});
 </script>
- <!-- Credit-->
-      <footer class="footer py-5 text-white" style="background-color: #064e3b; font-family: 'Times New Roman', serif;">
-    <div class="container-fluid px-lg-5"> <div class="row">
-            <div class="col-lg-8 text-start mb-4 mb-lg-0">
-                <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; border-bottom: 1px solid rgba(255,255,255,0.2); display: inline-block; padding-bottom: 5px;">Tim Redaksi</h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Penasihat:</strong> Al-Ustadz Dr.Nurul Salis Alamin, M.Pd.I.</p>
-                        <p class="mb-1"><strong>Pembimbing:</strong> Al-Ustadz Farouq Muhammad Syarif, S.Fill.I.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Tim Penulis:</strong> Nabila Fatihatunnada, S.Pd., A'izzaty Alfatul Urfi, Dea El Syifana Qurratu'ain</p>
-                        <p class="mb-1"><strong>Tim Layout:</strong> Maghfiro Ihzani Maulania, Siti Avila Amadea, Aufa Syahma Nabila</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 text-lg-end text-start">
-                <div class="mb-2">
-                    <h5 class="text-uppercase mb-0">Panitia PKA 100 Gontor</h5>
-                    <p class="text-white-50">Pondok Modern Darussalam Gontor</p>
-                </div>
-                <div class="small text-white-50 mt-4">
-                    Copyright &copy; PKA 100 Gontor 2026
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>

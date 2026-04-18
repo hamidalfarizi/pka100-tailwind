@@ -1,60 +1,59 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-<section class="about-section" id="about" style="background-color: #0de9ae; padding: 150px 0 100px 0; text-align: center;">
-               <div class="container">
-        <h2 style="color: white; margin-bottom: 20px; font-family: 'Times New Roman', serif; text-transform: uppercase; letter-spacing: 2px;">Serba Serbi PKA</h2>
-        <p style="color: rgba(255,255,255,0.7); font-family: 'Times New Roman', serif;">
-            Sabtu, 14 Februari 2026 <br>
-            Gontor Putri Kampus 3
-        </p>
+<!-- Hero Header -->
+<header class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/40 via-emerald-900/60 to-slate-50 dark:to-slate-950"></div>
+        <img src="assets/img/_MG_6117.jpg" class="w-full h-full object-cover" alt="Background">
     </div>
-</section>
 
-<section class="Menu-section text-center pt-5" id="Menu"> 
-    <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-Black mb-4"style="font-family: 'Times new Roman', sans-serif; font-size: 50px;">"Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"</h2>
+    <div class="container relative z-10 mx-auto text-center">
+        <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight uppercase">
+            SERBA-SERBI<br>
+            <span class="text-emerald-400">PKA 100 GONTOR</span>
+        </h1>
+        <div class="w-24 h-1.5 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-emerald-50/80 font-medium max-w-2xl mx-auto italic">Informasi Pelengkap, Desain, dan Panduan Umum PKA</p>
+    </div>
+</header>
+
+<!-- Content Section -->
+<section class="py-20 px-6 bg-slate-50 dark:bg-slate-950">
+    <div class="container mx-auto max-w-5xl">
+        <div class="bg-white dark:bg-slate-900 rounded-[32px] p-8 md:p-16 shadow-xl shadow-emerald-950/5 dark:shadow-emerald-900/10 flex flex-col items-center text-center border border-slate-100 dark:border-slate-800">
+            
+            <h2 class="text-3xl md:text-5xl font-black text-slate-800 dark:text-emerald-50 mb-8 leading-tight">
+                "Gontor Berkomitmen Menanamkan Nilai-Nilai Islam"
+            </h2>
+
+            <div class="inline-flex p-6 rounded-[40px] bg-emerald-50 dark:bg-emerald-900/40 mb-12 shadow-inner">
+                 <img class="max-w-full md:max-w-2xl h-auto rounded-3xl shadow-2xl transform hover:rotate-1 transition-transform duration-500" src="assets/img/_MG_6117.jpg" alt="Serba Serbi" />
+            </div>
+            
+            <div class="w-16 h-1 bg-emerald-200 dark:bg-emerald-900 mb-10"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left w-full">
+                <div class="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-800">
+                    <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-xl"></i>
                     </div>
+                    <h4 class="text-xl font-bold text-slate-800 dark:text-emerald-50 mb-3">Dekorasi & Desain</h4>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Informasi mengenai tema dekorasi, desain kaos angkatan, dan bentuk miniatur yang menghiasi arena PKA 100.
+                    </p>
                 </div>
-                <img class="img-fluid " src="assets/img/_MG_6117.jpg"style="width: 500px; height: auto;" alt="..." />
-                 <p class= "text-Black\-50 pt-3 mb-4" >
-    ini tentang serba berbi.... hal hal seperti shape dekorasi, shape kaos, dan map kampus..pokoknya yg di halam terakhir terakkhir
-</p>
-</div>
-
-           <!-- Credit-->
-      <footer class="footer py-5 text-white" style="background-color: #064e3b; font-family: 'Times New Roman', serif;">
-    <div class="container-fluid px-lg-5"> <div class="row">
-            <div class="col-lg-8 text-start mb-4 mb-lg-0">
-                <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; border-bottom: 1px solid rgba(255,255,255,0.2); display: inline-block; padding-bottom: 5px;">Tim Redaksi</h5>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Penasihat:</strong> Al-Ustadz Dr.Nurul Salis Alamin, M.Pd.I.</p>
-                        <p class="mb-1"><strong>Pembimbing:</strong> Al-Ustadz Farouq Muhammad Syarif, S.Fill.I.</p>
+                <div class="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-800">
+                    <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marked-alt text-xl"></i>
                     </div>
-                    <div class="col-md-6">
-                        <p class="mb-1"><strong>Tim Penulis:</strong> Nabila Fatihatunnada, S.Pd., A'izzaty Alfatul Urfi, Dea El Syifana Qurratu'ain</p>
-                        <p class="mb-1"><strong>Tim Layout:</strong> Maghfiro Ihzani Maulania, Siti Avila Amadea, Aufa Syahma Nabila</p>
-                    </div>
+                    <h4 class="text-xl font-bold text-slate-800 dark:text-emerald-50 mb-3">Denah & Fasilitas</h4>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Panduan lokasi, denah kampus Putri 3, serta informasi fasilitas pendukung selama rentetan kegiatan berlangsung.
+                    </p>
                 </div>
             </div>
 
-            <div class="col-lg-4 text-lg-end text-start">
-                <div class="mb-2">
-                    <h5 class="text-uppercase mb-0">Panitia PKA 100 Gontor</h5>
-                    <p class="text-white-50">Pondok Modern Darussalam Gontor</p>
-                </div>
-                <div class="small text-white-50 mt-4">
-                    Copyright &copy; PKA 100 Gontor 2026
-                </div>
-            </div>
+            <p class="mt-16 text-slate-400 dark:text-slate-500 font-bold italic lowercase tracking-wider">
+                -- Bagian terakhir dari Guidebook PKA 100 Gontor --
+            </p>
         </div>
     </div>
-</footer>
+</section>
